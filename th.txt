@@ -1,0 +1,112 @@
+frontend : an,react,js, jq....
+backend  : spring,.....,hibernate, node js,nest, larv,...
+
+REACT JS :
+facebook :
+
+spa: single page application, index.html
+
+node install :
+
+d:
+ projects
+   node
+   react-js
+      open cmd
+
+npm:
+submodule
+
+npx create-react-app learning24
+
+index.js : -App.js
+index.html
+
+mvc :model view controller:
+
+mvvm: model view view model
+
+component arch:
+
+we can create 2 type of comp in react 
+class based comp     :
+function based comp  : 16.8 : hooks
+
+
+jsx:
+
+
+function keyword
+arrow functions
+
+for import
+export const  : {Header} 
+export default : Header
+
+styling:
+1. inline
+2. internal
+3. external
+
+
+app-->product -->productList
+
+parent componet child component :
+props
+:props statnd for properties
+props are immutable
+props are read only
+props are used to pass data from parent to child component
+
+context api
+
+
+dom:document object model
+
+react virtual dom:
+
+hook: built in function
+use keyword is used to create hooks
+useState
+
+npm install react-router-dom
+
+
+package: react-router-dom v 6.x..
+<BrowseRouter> :- it is used to create routing in react
+<Routes> :- it is used to create routes
+<Route> :- it is used to create route
+
+-----------------------------------------------------------
+react-hook-form
+
+
+
+
+handleSubmit(cb){
+
+  //useSatte [] ... event ->
+  data fname, lname, email
+
+  {obj}
+
+  cb(obj)
+
+
+}
+
+
+{
+  required:{
+    value:true,message:"Name is Required*"
+    }
+}
+
+{
+            required:{
+                value:true,
+                message:"Email is Required*"
+            },
+}
+
+changes
