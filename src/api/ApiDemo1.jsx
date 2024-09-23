@@ -1,5 +1,5 @@
 import axios from "axios";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Slide, ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { MyLoader } from "../components/MyLoader";
@@ -52,8 +52,29 @@ export const ApiDemo1 = () => {
     setsingleUser(res.data.data);
     setshow(true);
   };
+  useEffect(() => {
+    
+    getApiCall();
+  
+    
+  }, [])
+
+  const searchHandler = async (e) => {
+
+    console.log("searchHandler", e.target.value);
+    const res = await axios.get("https://node5.onrender.com/user/filter2",{
+      params:{
+        name:e.target.value
+      }
+    })
+    console.log("search res", res.data.data);
+    setusers(res.data.data);
+
+  }
+  
   return (
     <div>
+      <input type="text" placeholder="search" onChange={(event)=>{searchHandler(event)}}/>
       {/* {
             isLoading && <p>LOADING......</p>
         } */}
@@ -72,13 +93,13 @@ export const ApiDemo1 = () => {
         transition={Slide}
       />
       <h1>API DEMO 1</h1>
-      <button
+      {/* <button
         onClick={() => {
           getApiCall();
         }}
       >
         GET
-      </button>
+      </button> */}
       {message}
       <table class="table table-dark">
         <thead>

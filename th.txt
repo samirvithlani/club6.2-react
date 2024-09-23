@@ -110,3 +110,12 @@ handleSubmit(cb){
 }
 
 changes
+
+useEffect:
+to handle side effects in react js we use useEffect hook
+side effects are those effects which are not related to the component rendering
+
+chat application :->
+send -->receive
+
+get api -> 
