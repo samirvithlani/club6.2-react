@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
+import { MyButton } from "../common/MyButton";
 
 export const FormDemo2 = () => {
   const { register, handleSubmit } = useForm();
@@ -14,8 +15,14 @@ export const FormDemo2 = () => {
     setoutput(data);
     setisSubbmited(true);
   };
+  const testFunction = () => {
+    alert("test function");
+  }
   return (
     <div>
+      <MyButton name="form demo2" clickHandler={testFunction} className="btn btn-danger"
+      style={{color:"black"}} 
+      ></MyButton>
       <form onSubmit={handleSubmit(submitHandler)}>
         <div>
           <label>FIRst name</label>

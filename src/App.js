@@ -26,13 +26,19 @@ import { Omdb } from "./api/Omdb";
 import { OmdbMovieDetail } from "./api/OmdbMovieDetail";
 import { UseEffectDemo } from "./components/UseEffectDemo";
 import { Blogs } from "./components/blogs/Blogs";
+import { MyButton } from "./common/MyButton";
 
 function App() {
+
+  const testFunction = () => {
+    console.log("test function");
+  }
  
 
   return (
     <div className="App">
       <Navbar></Navbar>
+      
       <Routes>
         <Route path ="/" element ={<Content/>}></Route>
         <Route path="/netflix/home" element={<NetflixHome/>}></Route>

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { MyButton } from "../common/MyButton";
 
 export const FormDemo1 = () => {
   const [name, setname] = useState("");
@@ -19,6 +20,9 @@ export const FormDemo1 = () => {
   };
   return (
     <div>
+      <MyButton name="form demo1" className="btn btn-info"
+      style={{color:"black"}} 
+      ></MyButton>
       <h1 style={{ color: "blue" }}>Form Demo 1</h1>
       <div>
         <label>NAME</label>
