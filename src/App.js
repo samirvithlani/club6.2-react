@@ -27,6 +27,7 @@ import { OmdbMovieDetail } from "./api/OmdbMovieDetail";
 import { UseEffectDemo } from "./components/UseEffectDemo";
 import { Blogs } from "./components/blogs/Blogs";
 import { MyButton } from "./common/MyButton";
+import { MuiButtons } from "./mui/MuiButtons";
 
 function App() {
 
@@ -57,6 +58,7 @@ function App() {
         <Route path = "/omdb/:id" element = {<OmdbMovieDetail/>}></Route>
         <Route path ="/useeffect" element ={<UseEffectDemo/>}></Route>
         <Route path ="/blogs" element ={<Blogs/>}></Route>
+        <Route path ="/muibutton"element ={<MuiButtons/>}></Route>
         {/* <Route path ="/*" element = {<h1>404</h1>}></Route> */}
         <Route path="/*" element ={<Error404/>}></Route>
       </Routes>
