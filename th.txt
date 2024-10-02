@@ -120,3 +120,24 @@ chat application :->
 send -->receive
 
 get api -> 
+
+
+https://mui.com/material-ui/react-rating/
+Rating task:
+1 :very bad
+2 :bad
+3 :good
+4 :very good
+5 :excellent
+
+https://mui.com/material-ui/react-slider/
+
+product array: [] -->price name --->
+
+map -->product ul li products
+
+
+slider --->
+0 to 100 --> product display
+0 to 200
+
