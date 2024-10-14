@@ -29,6 +29,7 @@ import { Blogs } from "./components/blogs/Blogs";
 import { MyButton } from "./common/MyButton";
 import { MuiButtons } from "./mui/MuiButtons";
 import { MuiLayout } from "./mui/MuiLayout";
+import { MuiTable } from "./mui/MuiTable";
 
 function App() {
 
@@ -61,6 +62,7 @@ function App() {
         <Route path ="/blogs" element ={<Blogs/>}></Route>
         <Route path ="/muibutton"element ={<MuiButtons/>}></Route>
         <Route path ="/muilayout"element ={<MuiLayout/>}></Route>
+        <Route path ="/muitable" element= {<MuiTable/>}></Route>
         {/* <Route path ="/*" element = {<h1>404</h1>}></Route> */}
         <Route path="/*" element ={<Error404/>}></Route>
       </Routes>

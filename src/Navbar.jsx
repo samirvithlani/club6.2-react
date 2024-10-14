@@ -87,6 +87,11 @@ export const Navbar = () => {
               mui layout
               </Link>
             </li>
+            <li class="nav-item">
+              <Link class="nav-link" to="/muitable">
+              mui table
+              </Link>
+            </li>
           </ul>
         </div>
       </nav>
